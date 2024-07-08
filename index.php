@@ -1,27 +1,26 @@
-<?php 
-include("includes/header.php"); 
-include("services/github.php"); 
+<?php
+include("includes/header.php");
+include("services/github.php");
 
 
 //Se incluye el archivo con los links de contacto
 $json_file = 'services/data.json';
 
 if (file_exists($json_file) && is_readable($json_file)) {
-   
-    $json_string = file_get_contents($json_file);
 
-    $data = json_decode($json_string, true);
+  $json_string = file_get_contents($json_file);
 
-    $x = $data['x'];
-    $whatsapp = $data['whatsapp'];
-    $github = $data['github'];
-    $linkedin = $data['linkedin'];
-    $email = $data['email'];
-    $mailto = $data['mailto'];
-    $repositories_github = $data['repositories_github'];
+  $data = json_decode($json_string, true);
 
+  $x = $data['x'];
+  $whatsapp = $data['whatsapp'];
+  $github = $data['github'];
+  $linkedin = $data['linkedin'];
+  $email = $data['email'];
+  $mailto = $data['mailto'];
+  $repositories_github = $data['repositories_github'];
 } else {
-    echo "Error: El archivo $json_file no existe o no se puede leer.";
+  echo "Error: El archivo $json_file no existe o no se puede leer.";
 }
 
 ?>
@@ -322,53 +321,53 @@ if (file_exists($json_file) && is_readable($json_file)) {
   <section id="portfolio" class="portfolio section">
 
     <!-- Section Title -->
-<div class="container section-title" data-aos="fade-up">
-  <h2>Portafolio</h2>
-  <p>Proyectos, repositorios y actividad reciente de caracter publico.</p>
-  <p>Nota: La seccion portafolio consume la api de GitHub por lo cual puede que las imagenes se demoren en cargarse.</p>
-</div><!-- End Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Portafolio</h2>
+      <p>Proyectos, repositorios y actividad reciente de caracter publico.</p>
+      <p>Nota: La seccion portafolio consume la api de GitHub por lo cual puede que las imagenes se demoren en cargarse.</p>
+    </div><!-- End Section Title -->
 
-<div class="container">
+    <div class="container">
 
-  <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-      <li data-filter="*" class="filter-active">Todos</li>
-      <li data-filter=".filter-app" style="display: none;">App</li>
-      <li data-filter=".filter-product" style="display: none;">Product</li>
-      <li data-filter=".filter-branding" style="display: none;">Branding</li>
-      <li data-filter=".filter-books" style="display: none;">Books</li>
-    </ul><!-- End Portfolio Filters -->
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">Todos</li>
+          <li data-filter=".filter-app" style="display: none;">App</li>
+          <li data-filter=".filter-product" style="display: none;">Product</li>
+          <li data-filter=".filter-branding" style="display: none;">Branding</li>
+          <li data-filter=".filter-books" style="display: none;">Books</li>
+        </ul><!-- End Portfolio Filters -->
 
-    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-      <!-- PHP Logic for Projects -->
-      <?php
-      foreach ($repos as $repo) {
-          if (isset($repo['private']) && !$repo['private'] && $repo['owner']['login'] === 'JunniorRavelo') {
+          <!-- PHP Logic for Projects -->
+          <?php
+          foreach ($repos as $repo) {
+            if (isset($repo['private']) && !$repo['private'] && $repo['owner']['login'] === 'JunniorRavelo') {
               // Determine filter class based on project type if available
               $filter_class = 'filter-app'; // Example, you might need to adjust this based on your project type logic
-      ?>
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item <?= $filter_class ?>">
-        <img src="https://raw.githubusercontent.com/JunniorRavelo/<?= htmlspecialchars($repo['name']) ?>/main/jsravelo/portada.svg" class="img-fluid" alt="Presentation of <?= htmlspecialchars($repo['name']) ?>">
-        <div class="portfolio-info">
-          <h4><?= htmlspecialchars($repo['name']) ?></h4>
-          <a style="display: none;" href="https://raw.githubusercontent.com/JunniorRavelo/<?= htmlspecialchars($repo['name']) ?>/main/jsravelo/portada.svg" title="<?= htmlspecialchars($repo['name']) ?>" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="<?= htmlspecialchars($repo['html_url']) ?>" title="Ver repositorio" class="details-link"><i class="bi bi-github"></i></a>
-        </div>
-      </div><!-- End Portfolio Item -->
-      <?php
+          ?>
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item <?= $filter_class ?>">
+                <img src="https://raw.githubusercontent.com/JunniorRavelo/<?= htmlspecialchars($repo['name']) ?>/main/jsravelo/portada.svg" class="img-fluid" alt="Presentation of <?= htmlspecialchars($repo['name']) ?>">
+                <div class="portfolio-info">
+                  <h4><?= htmlspecialchars($repo['name']) ?></h4>
+                  <a style="display: none;" href="https://raw.githubusercontent.com/JunniorRavelo/<?= htmlspecialchars($repo['name']) ?>/main/jsravelo/portada.svg" title="<?= htmlspecialchars($repo['name']) ?>" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="<?= htmlspecialchars($repo['html_url']) ?>" title="Ver repositorio" class="details-link"><i class="bi bi-github"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
+          <?php
+            }
           }
-      }
-      ?>
+          ?>
 
-    </div><!-- End Portfolio Container -->
+        </div><!-- End Portfolio Container -->
 
-  </div>
+      </div>
 
-</div>
+    </div>
 
-</section><!-- /Portfolio Section -->
+  </section><!-- /Portfolio Section -->
 
 
   <!-- Pricing Section -->
