@@ -2,7 +2,7 @@
 
 
 ---
-Creditos Fronted: Plantilla
+Creditos Fronted: Plantilla HTML, CSS y JS
 Template Name: DevFolio
 Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
 Author: BootstrapMade.com
