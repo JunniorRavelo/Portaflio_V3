@@ -1,6 +1,5 @@
 <?php
 include("includes/header.php");
-include("services/github.php");
 
 
 //Se incluye el archivo con los links de contacto
@@ -33,8 +32,8 @@ if (file_exists($json_file) && is_readable($json_file)) {
     <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in" style="display: none;">
 
     <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-      <h2>Hola, soy J. Santiago Ravelo</h2>
-      <p><span class="typed" data-typed-items="Desarrollador TI, Desarrollador RPA, Desarrollador BPA, Desarrollador WEB, Desarrollador DESKTOP"></span></p>
+      <h2>J. Santiago Ravelo</h2>
+      <p><span class="typed" data-typed-items="DevOps, DevRPA, DevBPA, Adm. Servidores"></span></p>
     </div>
 
   </section><!-- /Hero Section -->
@@ -55,7 +54,6 @@ if (file_exists($json_file) && is_readable($json_file)) {
               <p><strong>Nombre: </strong> <span>J. Santiago Ravelo</span></p>
               <p><strong>Perfil: </strong> <span>Ing Sistemas | Freelance</span></p>
               <p><strong>Email: </strong> <span>J.SantiagoRavelo@gmail.com</span></p>
-              <p><strong>Teléfono: </strong> <span>(+57) 320-294-7007</span></p>
             </div>
           </div>
 
@@ -71,7 +69,7 @@ if (file_exists($json_file) && is_readable($json_file)) {
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>MariaDB, MySQL y MongoDB</span> <i class="val">Junior</i></span>
+              <span class="skill"><span>SQL y NoSQL</span> <i class="val">Junior</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -85,7 +83,7 @@ if (file_exists($json_file) && is_readable($json_file)) {
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>PHP: Nativo y Laravel</span> <i class="val">Mid-Level</i></span>
+              <span class="skill"><span>Laravel</span> <i class="val">Mid-Level</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -106,7 +104,7 @@ if (file_exists($json_file) && is_readable($json_file)) {
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>BPA: Herramientas de Automatización Empresarial</span> <i class="val">Mid-Level</i></span>
+              <span class="skill"><span>BPA: RPA Empresarial</span> <i class="val">Mid-Level</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -158,7 +156,6 @@ if (file_exists($json_file) && is_readable($json_file)) {
             <p><em>Estudiante de Ingeniería de Sistemas en los últimos semestres, con enfoque en desarrollo web y automatización (RPA). Tengo experiencia en PHP (Laravel), Python (Flask), y herramientas de RPA como UIPath. Además, manejo administración de servidores Ubuntu y diseño de bases de datos SQL y NoSQL. Busco oportunidades laborales para crecer profesionalmente.</em></p>
             <ul>
               <li>Colombia, Cúcuta</li>
-              <li>(+57) 320-294-7007</li>
               <li>J.SantiagoRavelo@gmail.com</li>
             </ul>
           </div><!-- Edn Resume Item -->
@@ -317,7 +314,11 @@ if (file_exists($json_file) && is_readable($json_file)) {
 
   </section><!-- /Services Section -->
 
+
   <!-- Portfolio Section -->
+
+  <?php include("services/github.php"); ?>
+
   <section id="portfolio" class="portfolio section">
 
     <!-- Section Title -->
@@ -524,11 +525,11 @@ if (file_exists($json_file) && is_readable($json_file)) {
           </div><!-- End Info Item -->
 
           <div class="col-lg-4">
-            <a class="info-item d-flex align-items-center" href="https://wa.me/573202947007" style="text-decoration: none; color: black;">
-              <i class="bi bi-whatsapp flex-shrink-0"></i>
+            <a class="info-item d-flex align-items-center" href="https://www.linkedin.com/in/jsravelo/" style="text-decoration: none; color: black;">
+              <i class="bi bi-linkedin flex-shrink-0"></i>
               <div>
-                <h3>WhatsApp</h3>
-                <p>(+57) 320-294-7007</p>
+                <h3>LinkedIn</h3>
+                <p>jsravelo</p>
               </div>
             </a>
           </div><!-- End Info Item -->

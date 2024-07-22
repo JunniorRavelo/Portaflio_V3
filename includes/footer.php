@@ -8,7 +8,6 @@
     </div>
     <div class="social-links d-flex justify-content-center">
       <a href="<?= $x ?>"><i class="bi bi-twitter-x"></i></a>
-      <a href="<?= $whatsapp ?>"><i class="bi bi-whatsapp"></i></a>
       <a href="<?= $mailto ?>"><i class="bi bi-envelope"></i></a>
       <a href="<?= $linkedin ?>"><i class="bi bi-linkedin"></i></a>
     </div>
