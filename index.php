@@ -29,11 +29,11 @@ if (file_exists($json_file) && is_readable($json_file)) {
   <!-- Hero Section -->
   <section id="hero" class="hero section dark-background">
 
-    <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in" style="display: none;">
+    <img src="assets/img/profile.jpg" alt="" data-aos="fade-in">
 
     <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
       <h2>J. Santiago Ravelo</h2>
-      <p><span class="typed" data-typed-items="DevOps, DevRPA, DevBPA, Adm. Servidores"></span></p>
+      <p><span class="typed" data-typed-items="Systems Engineering Student, DevOps, Full Stack, RPA/BPA"></span></p>
     </div>
 
   </section><!-- /Hero Section -->
@@ -48,7 +48,7 @@ if (file_exists($json_file) && is_readable($json_file)) {
 
           <div class="row justify-content-between gy-4">
             <div class="col-lg-5">
-              <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+              <img src="assets/img/selfie.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-7 about-info">
               <p><strong>Nombre: </strong> <span>J. Santiago Ravelo</span></p>
@@ -62,53 +62,55 @@ if (file_exists($json_file) && is_readable($json_file)) {
             <h5>Skills | Habilidades</h5>
 
             <div class="progress">
-              <span class="skill"><span>Ubuntu Server 24.04</span> <i class="val">Junior</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>SQL y NoSQL</span> <i class="val">Junior</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Python: Flask, OpenCV y TensorFlow</span> <i class="val">Junior</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Laravel</span> <i class="val">Mid-Level</i></span>
+              <span class="skill"><span>SysAdmin</span> <i class="val">Mid-Level</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>RPA: P.Automate, UIPath y NodeJs</span> <i class="val">Mid-Level</i></span>
+              <span class="skill"><span>SQL/NoSQL</span> <i class="val">Mid-Level</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>RPA: Selenium, Python y Java JVM</span> <i class="val">Mid-Level</i></span>
+              <span class="skill"><span>Next/React/React Native</span> <i class="val">Mid-Level</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
 
             <div class="progress">
-              <span class="skill"><span>BPA: RPA Empresarial</span> <i class="val">Mid-Level</i></span>
+              <span class="skill"><span>Python/Flask</span> <i class="val">Mid-Level</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>PHP/Laravel</span> <i class="val">Mid-Level</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>RPA: P.Automate, UIPath y NodeJs</span> <i class="val">Mid-Level</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>RPA: Selenium, Python y Java JVM</span> <i class="val">Semi-Senior</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+
 
 
           </div>
@@ -118,15 +120,17 @@ if (file_exists($json_file) && is_readable($json_file)) {
           <div class="about-me">
             <h4>Acerca de mi</h4>
             <p>
-              ¡Hola! Soy Junnior Santiago Ravelo Velasco, estudiante de Ingeniería de Sistemas de ultimos semestres con un enfoque apasionado en el desarrollo web y la automatización (RPA). Mi trayectoria académica y proyectos personales me han permitido adquirir experiencia práctica en la creación de aplicaciones web robustas utilizando PHP (Laravel) y Python (Flask).
+              ¡Hola! Soy Junnior Santiago Ravelo Velasco, estudiante de los últimos semestres de Ingeniería de Sistemas con una sólida formación en administración de servidores, contenedores y desarrollo full stack. Mi pasión por la tecnología me ha llevado a adquirir experiencia en la administración de servidores Linux (Ubuntu), así como en la implementación y gestión de aplicaciones web utilizando tecnologías modernas como PHP (Laravel) y Python (Flask).
             </p>
             <p>
-              Me especializo en la implementación de soluciones automatizadas utilizando herramientas avanzadas de RPA como UIPath y entre otras, optimizando procesos empresariales para mejorar la eficiencia operativa. Además, tengo habilidades en la administración de servidores Ubuntu y en el diseño de bases de datos tanto SQL como NoSQL.
+              A lo largo de mi carrera, he trabajado con diversos sistemas de bases de datos tanto SQL (MariaDB, MySQL) como NoSQL (MongoDB), optimizando su rendimiento y seguridad en entornos de producción. Además, tengo experiencia en el uso de herramientas de automatización (RPA) como UIPath, Power Automate y Selenium, lo que me ha permitido crear soluciones eficientes para la automatización de procesos empresariales.
             </p>
             <p>
-              Busco oportunidades para trabajar en proyectos desafiantes que me permitan seguir aprendiendo y creciendo profesionalmente. Si está interesado en trabajar conmigo, no dude en ponerse en contacto.
+              Mi enfoque incluye también la implementación de contenedores, manejo de servidores VPS, y despliegue de aplicaciones web robustas. Me especializo en la gestión de infraestructura y soluciones en la nube, asegurando el rendimiento y la estabilidad de los sistemas que administro.
             </p>
-
+            <p>
+              Estoy en constante búsqueda de nuevos desafíos que me permitan seguir desarrollando mis habilidades y conocimientos, especialmente en la administración de sistemas y el desarrollo full stack. Si está interesado en colaborar en proyectos innovadores y de alto impacto, no dude en ponerse en contacto conmigo.
+            </p>
           </div>
         </div>
       </div>
@@ -515,13 +519,13 @@ if (file_exists($json_file) && is_readable($json_file)) {
         <div class="row gy-5">
 
           <div class="col-lg-4">
-            <div class="info-item d-flex align-items-center">
+            <a class="info-item d-flex align-items-center" href="https://maps.app.goo.gl/kkCahmFwnojfac9t5" style="text-decoration: none; color: black;">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Direccion</h3>
-                <p style="color: black;">Cúcuta - Colombia</p>
+                <h3>Dirección</h3>
+                <p>Cúcuta - Colombia</p>
               </div>
-            </div>
+            </a>
           </div><!-- End Info Item -->
 
           <div class="col-lg-4">
@@ -529,7 +533,7 @@ if (file_exists($json_file) && is_readable($json_file)) {
               <i class="bi bi-linkedin flex-shrink-0"></i>
               <div>
                 <h3>LinkedIn</h3>
-                <p>jsravelo</p>
+                <p>J. Santiago Ravelo</p>
               </div>
             </a>
           </div><!-- End Info Item -->

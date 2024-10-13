@@ -11,7 +11,7 @@
       <a href="<?= $mailto ?>"><i class="bi bi-envelope"></i></a>
       <a href="<?= $linkedin ?>"><i class="bi bi-linkedin"></i></a>
     </div>
-    <div class="credits">
+    <div class="credits" style="display: none;">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you've purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
